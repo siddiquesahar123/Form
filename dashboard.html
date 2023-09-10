@@ -1,0 +1,37 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome, <span id="userFullName"></span></h1>
+        <button id="logoutBtn">Logout</button>
+    </div>
+    
+ <div class="blogs">
+    <h2>Dashboard</h2>
+    <form id="formBlog">
+        <label for="blogtitle"></label>
+        <input type="text" name="title" id="title" placeholder="placeholder" required minlength="5" maxlength="50">
+    <br>
+    <label for="blogbody"></label>
+   <textarea id="blogBody" minlength="100" maxlength="3000" placeholder="What is your mind"></textarea>
+    <br>
+
+    <button type="submit">Post</button>
+</form>
+ </div>
+
+ <div class="blog-posts">
+    <h2>Your blog post</h2>
+    <div id="blogList"></div>
+ </div>
+
+    <script type = "module" src = "./javascript/app.js"></script>
+</body>
+</html>
